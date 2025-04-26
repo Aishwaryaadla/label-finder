@@ -7,7 +7,9 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="text-[50px]"> Hello World!</div>
+    <div className="text-3xl font-bold underline text-blue-500">
+      Hello Aish! 🚀 Tailwind is working!
+    </div>
   )
 }
 
