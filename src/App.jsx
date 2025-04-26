@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
 import Footer from './components/Footer';
 import CategoryPage from './pages/CategoryPage';
+import CategoriesPage from './pages/CategoriesPage';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,7 +18,8 @@ function App() {
       <div className="flex-grow p-4">
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/categories" element={<CategoryPage />} />
+          <Route path="/categories" element={<CategoriesPage />} />
+          <Route path="/categories/:categoryName" element={<CategoryPage />} />
         </Routes>
       </div>
       <Footer />
