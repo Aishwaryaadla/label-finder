@@ -1,0 +1,179 @@
+/* src/App.css */
+/* src/styles.css */
+:root {
+    --custom-blue: #395886;
+    --custom-light-blue: #628ECB;
+    --custom-light-light-blue: #8AAEE0;
+  }
+  
+  /* Use the custom colors throughout the application */
+  .custom-text-blue {
+    color: var(--custom-blue);
+  }
+  
+  .custom-text-light-blue {
+    color: var(--custom-light-blue);
+  }
+  
+  .custom-text-light-light-blue {
+    color: var(--custom-light-light-blue);
+  }
+  
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F7F9FB; /* Light grayish background */
+    color: #395886; /* Dark blue text color */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Styling for sections */
+  section {
+    padding: 40px 20px;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #395886; /* Dark blue background */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 2px solid #628ECB; /* Light blue border */
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #ffffff;
+  }
+  
+  /* Search Bar */
+  input[type="text"] {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: 2px solid #628ECB;
+    font-size: 1rem;
+    margin-right: 12px;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #395886; /* Dark blue focus border */
+    box-shadow: 0 0 5px rgba(57, 88, 134, 0.5);
+  }
+  
+  button {
+    padding: 12px 24px;
+    background-color: #628ECB; /* Light blue background */
+    color: white;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #395886; /* Dark blue on hover */
+  }
+  
+  /* Categories Section */
+  section.categories {
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    border-radius: 8px;
+  }
+  
+  .categories h2 {
+    font-size: 2rem;
+    color: #395886;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Category Cards */
+  .category-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .category-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #395886;
+  }
+  
+  .category-card p {
+    font-size: 1rem;
+    color: #628ECB;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #395886; /* Dark blue background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Utility classes */
+  .text-center {
+    text-align: center;
+  }
+  
+  .mt-4 {
+    margin-top: 1rem;
+  }
+  
+  .mt-8 {
+    margin-top: 2rem;
+  }
+  
+  .mt-12 {
+    margin-top: 3rem;
+  }
+  
+  .max-w-5xl {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .md\\:grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .gap-6 {
+    gap: 1.5rem;
+  }
+  

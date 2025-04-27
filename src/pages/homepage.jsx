@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import '../App.css'; // Import your custom CSS
 
 function HomePage() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -49,7 +49,7 @@ function HomePage() {
     <div className="p-6">
       {/* Hero Section */}
       <section className="text-center mt-12">
-        <h1 className="text-5xl font-bold text-purple-700">Discover Labels You’ll Love 💜</h1>
+        <h1 className="text-5xl font-bold custom-blue">Discover Labels You’ll Love 💙</h1>
         <p className="mt-4 text-gray-600 text-lg">Search and shop from amazing small businesses on Instagram!</p>
 
         {/* Search Bar */}
@@ -68,18 +68,17 @@ function HomePage() {
       </section>
 
       {/* Filtered Categories */}
-      <section className="mt-12">
+      <section className="mt-12 categories">
         <h2 className="text-3xl font-semibold text-gray-800 mb-6 text-center">Popular Categories</h2>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
           {filteredCategories.map((category) => (
-            <Link
-              to={`/category/${category.name.toLowerCase()}`}
+            <div
               key={category.name}
-              className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition"
+              className="category-card"
             >
               <h3 className="text-lg font-bold text-purple-600">{category.name}</h3>
-            </Link>
+            </div>
           ))}
         </div>
       </section>
@@ -88,4 +87,3 @@ function HomePage() {
 }
 
 export default HomePage;
-
